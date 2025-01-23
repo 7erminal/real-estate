@@ -1,0 +1,95 @@
+.button-item-env{
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+}
+
+
+.editFields{
+	opacity: 0;
+}
+
+.fa-caret-right:hover{
+	color: gray;
+}
+
+.imageDiv{
+	position: relative;
+	width:80px; 
+	height: 84px; 
+	overflow: hidden; 
+	border: 1px solid #eff1f2; 
+	border-radius: 3px; 
+	background-color: white;
+}
+
+.addMorePicsEdit{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	background-color:  #85c1e9;
+}
+
+.addMorePicsEdit:hover{
+	background-color:  #5dade2;
+	cursor: pointer;
+}
+
+.fa-dice-d6{
+	left: 50%;
+  	top: 50%;
+  	transform: translate(-50%, -50%);
+ 	position: absolute;
+}
+
+.imagesCol{
+	position: relative;
+}
+
+.ajaxImageButton{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.4;
+	z-index: 1;
+}
+
+.ajaxImageButton:hover{
+	cursor: pointer;
+	background-color:  #85c1e9;
+}
+
+.button-remove-image{
+	color: #fc4f0e; 
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	z-index: 1000;
+}
+
+.isDefault{
+	position: absolute;
+	bottom: 5px;
+	right: 5px;
+	z-index: 1000;
+}
+
+.addItem:hover{
+	cursor: cell;
+}
+
+.removeItem:hover{
+	cursor: w-resize;
+}
+
+.cust-form-select{
+    width: 100%;
+    height: 40px;
+	border-radius: 5px;
+	border: 1px gray solid;
+}

@@ -1,0 +1,214 @@
+.banner1{
+	margin-top: 96px;
+	width: 100%;
+	height: 300px;
+	background-color: #e4c632;
+	text-align: center;
+	font-size: 25px;
+}
+
+.banner2{
+	margin-top: 20px;
+	margin-left: 14px;
+	margin-right: 13px;
+	width: 80%;
+	height: 70px;
+	background-color: #39a3dc;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	border-radius: 12px;
+}
+
+.banner2 span{
+	position: relative;
+	top:20%;
+}
+
+.saliv{
+	background-color: blue;
+}
+
+.item-detail-display{
+	width: 95%;
+	height: 380px;
+	border-radius: 5px;
+	background-color:  #cacbcb;
+	overflow: hidden;
+	color: #6f7070;
+	-webkit-box-shadow: -1px 0px 15px -4px rgba(0,0,0,0.53);
+	-moz-box-shadow: -1px 0px 15px -4px rgba(0,0,0,0.53);
+	box-shadow: -1px 0px 15px -4px rgba(0,0,0,0.53);
+}
+
+.itemImage-display{
+	width: 100%;
+	height: 60%;
+	background-color: #d1dde3;
+	position: relative;
+	overflow: hidden;
+}
+
+.item-detail-display:hover .itemImage-display::after{
+	visibility: visible;
+	opacity: 1;
+}
+
+.itemImage-display::after{
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	border:3px solid #d2ae1a;
+	position: absolute;
+	visibility: hidden;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: transparent;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+	content: '';
+	-webkit-transition: all 200ms ease;
+	-moz-transition: all 200ms ease;
+	-ms-transition: all 200ms ease;
+	-o-transition: all 200ms ease;
+	transition: all 200ms ease;
+}
+
+.item-info-display{
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 5px;
+	font-family: "AppleSDGothicNeo-Thin","Palatino";
+}
+
+.item-name{
+	font-size: 17px;
+}
+
+.item-price{
+	font-size: 25px;
+}
+
+.cart-button{
+	background-color: #858686;
+	color: whitesmoke;
+	bottom: 5px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+  	transition-duration: 0.4s;
+}
+
+.cart-button:after {
+  content: "";
+  background: #90d6ee;
+  display: block;
+  position: absolute;
+  padding-top: 200%;
+  padding-left: 200%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.cart-button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.cart-button:hover{
+	background-color: #0794d1;
+	color:white;
+}
+
+.feature{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width:auto;
+	height: 15%;
+	background-color: #fc5d44;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+	border:2px #fc583e solid;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.feature span{
+	position: relative;
+	top: 10%;
+}
+
+.super_container
+{
+	width: 100%;
+	overflow: hidden;
+	padding-left: 263px;
+}
+
+.receiptSection{
+	width: 100%;
+}
+
+.receiptSection
+{
+	width: 100%;
+	background: #FFFFFF;
+	padding-top: 83px;
+	padding-bottom: 104px;
+}
+
+.receiptCard{
+	width: 100%;
+	padding-top: 43px;
+	padding-bottom: 44px;
+	color: whitesmoke;
+}
+
+.card-text{
+	color: whitesmoke;
+	font-size: 20px;
+}
+
+.button a
+{
+	display: block;
+	line-height: 47px;
+	padding-left: 47px;
+	padding-right: 47px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #414141;
+	text-transform: uppercase;
+}
+.button_continue
+{
+	background: #bbe432;
+}
+.button_continue:hover
+{
+	background: #414141;
+}
+.button_continue:hover a
+{
+	color: #bbe432;
+}
+
+.tableDesign{
+	color: black;
+}
+
+.sub-cat-item:hover{
+	cursor: pointer;
+}
+
+.edit-button:hover{
+	cursor: pointer;
+}
+

@@ -1,0 +1,209 @@
+body{
+    width: 100%;
+    /* overflow-x: hidden; */
+}
+.video-summary-section{
+    height: 570px;
+    width: 100%;
+    background-color: #f8f9f9;
+    background-position: center;
+    background-size: cover;
+    /* filter: brightness(150%); */
+}
+
+.about-section{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: whitesmoke;
+}
+
+.about-section-card-row{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.about-section-card-title{
+    justify-content: center;
+    display: flex;
+}
+
+.video-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.video-title{
+    width: 80%;
+}
+
+.video-title h1{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #3275c7;
+    /* line-height: 32px; */
+}
+
+.video-title a{
+    font-size: 20px;
+    font-weight: bolder;
+    color: #1082ce;
+    background-color: white;
+    border: none;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 60px;
+}
+
+.achievements-div{
+    position: relative;
+    width: 100%;
+    padding-top: 210px;
+    padding-bottom: 210px;
+    background-color: #1e2427;
+    overflow-x: hidden;
+}
+
+.achievment-title{
+    font-size: 50px;
+    color: white;
+    font-weight: bolder;
+}
+
+.achievement-desc{
+    color: white;
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.achievement-tile{
+    width: 100%;
+    height: 280px;
+    border-radius: 12px;
+    border: #373c3f;
+    background-color: #242a2d;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.achievement-tile h1{
+    color: #586b74;
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.achievement-tile span{
+    color: #f1f5f6;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+footer{
+    padding-top: 120px;
+    padding-bottom: 50px;
+    background-color: whitesmoke;
+}
+
+.itemsHome{
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.saveForm{
+    position: relative;
+    width: 100%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.items-item{
+    position: relative;
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.4s;
+    transform: scale(1.0);
+}
+
+.itemDiv:hover img, .items-item:hover img{
+    filter: brightness(115%);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.item-info{
+    position: relative;
+    /* width: 100%; */
+}
+
+.single-item{
+    position: relative;
+    width: 100%;
+}
+
+.linkToItems{
+    text-decoration: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+}
+
+
+.linkToItems:hover{
+    text-decoration: none;
+}
+
+.item-stats{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.item-content{
+    padding: 8px;
+}
+
+.pageBar{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+#categoryItemsDiv{
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.recent-listing-section{
+    height: 700px;
+}
+
+@media (max-width: 581px) {
+    .recent-listing-section{
+        height: 1600px;
+    }
+}
+
+/* @media (min-width: 481px) and (max-width: 581px) {
+    .recent-listing-section{
+        height: 1700px;
+    }
+} */
+
+@media (min-width: 581px) and (max-width: 899px) {
+    .recent-listing-section{
+        height: 1000px;
+    }
+}

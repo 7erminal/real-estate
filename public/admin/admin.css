@@ -1,0 +1,8 @@
+.button-item-env{
+	padding-top: 4px;
+	padding-bottom: 5px;
+	padding-left: 6px;
+}
+.button-item-inv:hover{
+	cursor: pointer;
+}
