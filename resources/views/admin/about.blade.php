@@ -41,7 +41,7 @@
 
                 <!-- content -->
 
-             <form method="post" action="{{ url('/admin2/saveShopAboutDetails') }}" enctype="multipart/form-data">
+             <form method="post" action="{{ url('/admin2/saveShopAboutDetails') }}">
                 {{ csrf_field() }}
                 <div class="form-group">
                     <label for="name"><img src="{{ Storage::url(optional($data['shopdetails'])->logo) }}" style="position: relative; width: 30px; border-radius: 2px;"/> {{ optional($data['shopdetails'])->shop_name }}</label>

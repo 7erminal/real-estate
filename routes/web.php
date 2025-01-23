@@ -77,6 +77,7 @@ Route::get('/', function (Request $request) {
     return view('index')->with('data',$data);
 });
 
+Route::middleware('auth')->group(function () {
 Route::get('/admin2', function () {
 	// $data['count'] = Transaction::count();
 	$data['count'] = Transaction::selectRaw('COUNT(*) as count,sum(quantity) as quantity,sum(total_price) as total_price')
@@ -119,13 +120,13 @@ Route::post('/admin2/saveMoreImages',[App\Http\Controllers\saveItemController::c
 Route::post('/admin2/removeImage',[App\Http\Controllers\removeItemsController::class, 'removeImage']);
 Route::post('/admin2/saveShopDetails',[App\Http\Controllers\savePersonalDetailsController::class, 'saveShopDetails']);
 Route::post('/admin2/saveShopAboutDetails',[App\Http\Controllers\savePersonalDetailsController::class, 'saveShopAboutDetails']);
-Route::post('/admin2/saveShopAboutDetails',[App\Http\Controllers\savePersonalDetailsController::class, 'saveShopLegalDetails']);
+Route::post('/admin2/saveShopLegalDetails',[App\Http\Controllers\savePersonalDetailsController::class, 'saveShopLegalDetails']);
 Route::post('/admin2/savePaymentDetails',[App\Http\Controllers\savePersonalDetailsController::class, 'savePaymentDetails']);
 Route::post('/admin2/processTransaction',[App\Http\Controllers\processTransactionController::class, 'processTransaction']);
 
 Route::get('/admin2/addImagesPage',[App\Http\Controllers\addImagesPageController::class, 'addImagesPage']);
 Route::post('/admin2/addImages',[App\Http\Controllers\postItemController::class, 'addImages']);
-
+});
 
 
 Route::get('/categories',[App\Http\Controllers\showCategoryItemsController::class, 'categoryid']);
